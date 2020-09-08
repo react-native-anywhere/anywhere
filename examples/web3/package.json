@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@react-native-anywhere/anywhere": "^0.0.1-alpha.4",
+    "expo": "~38.0.0",
+    "react": "~16.11.0",
+    "react-dom": "~16.11.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+    "react-native-web": "0.11.7"
+  },
+  "scripts": {
+    "postinstall": "npx @react-native-anywhere/anywhereify",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo web",
+    "eject": "expo eject"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0"
+  },
+  "private": true
+}

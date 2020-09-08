@@ -1,0 +1,6 @@
+{
+  "exports": [
+    { "name": "@react-native-anywhere/polyfill-base64" },
+    { "name": "web3", "alias": "Web3" }
+  ]
+}
