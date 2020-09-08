@@ -7,7 +7,7 @@
       "alias": "OpenGSN",
       "exports": [
         { "name": "dist/RelayProvider", "alias": "RelayProvider" },
-        { "name": "dist/GSNCondigurator", "alias": "GSNConfigurator" }
+        { "name": "dist/GSNConfigurator", "alias": "GSNConfigurator" }
       ]
     }
   ]
