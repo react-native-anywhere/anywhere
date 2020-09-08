@@ -23,9 +23,10 @@ export default function App() {
 
         const deployment = await factory.deploy(forwarderAddress);
         await deployment.deployed();
+        
+        console.warn("Deployed the contract!");
 
         const { resolveConfigurationGSN } = GSNConfigurator;
-        console.warn(RelayProvider);
 
         const config = await resolveConfigurationGSN(
           httpProvider,
@@ -39,19 +40,19 @@ export default function App() {
         const gsnProvider = new RelayProvider(httpProvider, config);
 
         const account = new ethers.Wallet(Buffer.from("1".repeat(64), "hex"));
-        const { address: from } = account;
+        const { address } = account;
         gsnProvider.addAccount({
-          address: from,
+          address,
           privateKey: Buffer.from(account.privateKey.replace("0x", ""), "hex"),
         });
 
         const etherProvider = new ethers.providers.Web3Provider(gsnProvider);
-        const counter = deployment.connect(etherProvider.getSigner(from));
+        const counter = deployment.connect(etherProvider.getSigner(address));
         const countBefore = await counter.counter();
         await counter.increment();
         const countAfter = await counter.counter();
 
-        console.warn('delta is', countBefore, countAfter);
+        console.warn("Incremented the Counter!", countBefore, countAfter);
       })();
     },
     [],
@@ -64,7 +65,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text>Universal React with Expo</Text>
+      <Text>OpenGSN Counter Example</Text>
     </View>
   );
 }
