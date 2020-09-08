@@ -1,6 +1,14 @@
 {
   "exports": [
     { "name": "@react-native-anywhere/polyfill-base64" },
-    { "name": "web3-providers-http", "alias": "Web3HttpProvider" }
+    { "name": "web3-providers-http", "alias": "Web3HttpProvider" },
+    { 
+      "name": "@opengsn/gsn",
+      "alias": "OpenGSN",
+      "exports": [
+        { "name": "dist/RelayProvider", "alias": "RelayProvider" },
+        { "name": "dist/GSNCondigurator", "alias": "GSNConfigurator" }
+      ]
+    }
   ]
 }

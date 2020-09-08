@@ -6,6 +6,10 @@ import { Web3HttpProvider } from "@react-native-anywhere/anywhere";
 
 import Counter from "./build/contracts/Counter";
 //import { RelayProvider, resolveConfigurationGSN } from "@react-native-anywhere/gsn";
+//
+
+const RelayProvider = "@opengsn/gsn/dist/RelayProvider";
+const GSNConfigurator = "@opengsn/gsn/dist/GSNConfigurator";
 
 export default function App() {
   useEffect(
