@@ -1,6 +1,6 @@
 {
   "name": "@react-native-anywhere/anywhere",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "description": "Placeholder package for bundled anywhere exports.",
   "main": "dist",
   "repository": "https://github.com/react-native-anywhere/anywhere",
