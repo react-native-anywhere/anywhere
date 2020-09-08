@@ -1,0 +1,10 @@
+{
+  "name": "@react-native-anywhere/anywhere",
+  "version": "0.0.1-alpha.0",
+  "description": "Placeholder package for bundled anywhere exports.",
+  "main": "dist",
+  "repository": "https://github.com/react-native-anywhere/anywhere",
+  "author": "Alex Thomas (@cawfree) <alex@getuni.app>",
+  "license": "MIT",
+  "private": false
+}
