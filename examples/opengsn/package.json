@@ -15,7 +15,7 @@
     "truffle": "^5.1.43"
   },
   "scripts": {
-    "postinstall": "../../../anywhereify/bin/anywhereify.js",
+    "postinstall": "@react-native-anywhere/anywhereify",
     "start-gsn": "npx @babel/node scripts/start-gsn",
     "start": "expo start",
     "android": "expo start --android",
