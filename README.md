@@ -1,7 +1,7 @@
 # @react-native-anywhere/anywhere
 [`@react-native-anywhere/anywhere`](https://www.npmjs.com/package/@react-native-anywhere/anywhere) is a build tool to help you expose [**browserified**](https://github.com/browserify/browserify) libraries to [**React Native**](https://reactnative.dev).
 
-There are a lot of really amazing libraries that we don't get to use in React Native because they assume the availability of core [**Node.js**](https://nodejs.org/en/) libraries such as [`crypto`](https://stackoverflow.com/questions/29836434/requiring-unknown-module-crypto-in-react-native-environment) or [**Web3**](https://github.com/ethereum/web3.js/).
+There are a lot of really amazing libraries such as [**Web3**](https://github.com/ethereum/web3.js/) that we don't get to use in React Native because they assume the availability of core [**Node.js**](https://nodejs.org/en/) libraries such as [`crypto`](https://stackoverflow.com/questions/29836434/requiring-unknown-module-crypto-in-react-native-environment).
 
 This tool can be used to compile compatible implementations of these libraries for the React Native runtime.
 
