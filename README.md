@@ -5,7 +5,7 @@ There are a lot of really amazing libraries that we don't get to use in React Na
 
 This tool can be used to compile compatible implementations of these libraries for the React Native runtime.
 
-## 🚀 getting started
+## 🚀 Getting Started
 
 Using [`yarn`]():
 
@@ -39,12 +39,16 @@ Finally, declare an [`anywhere.config.json`](https://github.com/react-native-any
 }
 ```
 
-Now you're all set! Whenever you reinstall your project, `npx @react-native-anywhere/anywhereify` will recompile your dependencies. These will then become available via imports:
+Now you're all set! ✨
+
+Whenever you reinstall your project, `npx @react-native-anywhere/anywhereify` will recompile your dependencies. These will then become available via imports:
 
 ```javascript
 import { Web3HttpProvider, OpenGSN } from "@react-native-anywhere/anywhere";
 const { RelayProvider, GSNConfigurator } = OpenGSN;
 ```
 
-## ✌️ license
+You can check out some **Example Projects** [**here**](https://github.com/react-native-anywhere/anywhere/tree/main/examples).
+
+## ✌️ License
 [**MIT**](./LICENSE)
