@@ -21,7 +21,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text>Universal React with Expo</Text>
+      <Text>Web3 in React Native</Text>
     </View>
   );
 }
