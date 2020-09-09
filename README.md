@@ -41,7 +41,7 @@ Finally, declare an [`anywhere.config.json`](https://github.com/react-native-any
 
 Now you're all set! ✨
 
-Whenever you reinstall your project, `npx @react-native-anywhere/anywhereify` will recompile your dependencies. These will then become available via imports:
+Whenever you reinstall your project, `npx @react-native-anywhere/anywhereify` will recompile the dependencies defined in you `anywhere.config.json` into a React native compatible format. Once this is done, they will become available via imports:
 
 ```javascript
 import { Web3HttpProvider, OpenGSN } from "@react-native-anywhere/anywhere";
