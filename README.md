@@ -13,10 +13,12 @@ Using [`yarn`]():
 yarn add @react-native-anywhere/anywhere
 ```
 
-Next, append the following command to your [`postinstall`](https://docs.npmjs.com/misc/scripts) script:
+Next, append the following command to your [`postinstall`](https://docs.npmjs.com/misc/scripts) script in your `package.json`:
 
-```
-npx @react-native-anywhere/anywhereify
+```diff
+"scripts": {
++ "postinstall": "npx @react-native-anywhere/anywhereify"
+}
 ```
 
 Finally, declare an [`anywhere.config.json`](https://github.com/react-native-anywhere/anywhere/blob/main/examples/opengsn/anywhere.config.json) at the root of your project. Here, you declare the libraries and naming conventions you'd like to expose to the React Native runtime:
