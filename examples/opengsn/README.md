@@ -1,4 +1,4 @@
-# Example
+# opengsn
 
 ```
 yarn
